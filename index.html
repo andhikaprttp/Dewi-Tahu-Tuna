@@ -70,6 +70,22 @@
             <a class="text-light nav-link active" aria-current="page" href="index.html">Home</a>
             <a class="text-light nav-link" href="https://wa.me/c/6285755867237">Menu</a>
             <a class="text-light nav-link" href="about.html">Tentang Kami </a>
+            <br>
+                    <form class="form-inline">
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cari Di Khansa">
+
+          <ul id="myUL">
+            <li><a href="#">Adele</a></li>
+            <li><a href="#">Agnes</a></li>
+
+            <li><a href="#">Billy</a></li>
+            <li><a href="#">Bob</a></li>
+
+            <li><a href="#">Calvin</a></li>
+            <li><a href="#">Christina</a></li>
+            <li><a href="#">Cindy</a></li>
+          </ul>
+        </form>
           </div>
         </div>
       </div>
@@ -361,6 +377,32 @@
         <p class="text-secondary text-center">
           Khansa ©2023
         </p>
+        <script>
+          function myFunction() {
+            // Declare variables
+            var input,
+            filter,
+            ul,
+            li,
+            a,
+            i,
+            txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByTagName("a")[0];
+              txtValue = a.textContent || a.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+              } else {
+                li[i].style.display = "none";
+              }
+            }
+          }
+        </script>
         <script src="js/bootstrap.min.js"></script>
       </body>
     </html>
