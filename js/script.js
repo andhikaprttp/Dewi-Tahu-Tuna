@@ -8,7 +8,6 @@ produkData.forEach((produk) => {
   // Membuat elemen card
   const cardCol = document.createElement("div");
   cardCol.classList.add("col");
-
   const card = document.createElement("div");
   card.classList.add("card");
 
