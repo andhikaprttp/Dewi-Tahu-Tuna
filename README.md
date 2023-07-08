@@ -1,7 +1,7 @@
 # Tahu Tuna Khas Pacitan 🛒
-Simple landing page store 
+Simple landing page store untuk UMKM , 
 
-Dibuat oleh Dewi Rati & Andhika Pratama Putra
+> Dibuat oleh Dewi Rati & Andhika Pratama Putra
 
 ## Fitur🌱
 
