@@ -5,7 +5,8 @@ Dibuat oleh Dewi Rati & Andhika Pratama Putra
 
 ## Fitur🌱
 
-- Integrasi dengan WhatsApp Business 
+- Integrasi dengan WhatsApp Business
+- Fitur CTA ( Call - To - Action )
 
 
 
