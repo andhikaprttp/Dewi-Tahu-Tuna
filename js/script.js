@@ -24,7 +24,8 @@ produkData.forEach((produk) => {
   // Menambahkan konten card
   const cardBody = document.createElement("div");
   cardBody.classList.add("card-body");
-
+  
+  // h5 dan judul produk
   const nama = document.createElement("h5");
   nama.classList.add("card-title");
   nama.textContent = produk.nama;
