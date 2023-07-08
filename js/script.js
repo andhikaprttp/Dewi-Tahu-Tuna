@@ -2,7 +2,6 @@
 
 // Andhika | Buat Fungsi
 
-
 // Mengisi data produk ke dalam card
 const cardContainer = document.getElementById("cardContainer");
 
@@ -24,14 +23,14 @@ produkData.forEach((produk) => {
   // Menambahkan konten card
   const cardBody = document.createElement("div");
   cardBody.classList.add("card-body");
-  
+
   // h5 dan judul produk
   const nama = document.createElement("h5");
   nama.classList.add("card-title");
   nama.textContent = produk.nama;
   cardBody.appendChild(nama);
 
-// deskripsi produk
+  // deskripsi produk
   const deskripsi = document.createElement("p");
   deskripsi.classList.add("card-text");
   deskripsi.textContent = produk.deskripsi;
@@ -42,14 +41,14 @@ produkData.forEach((produk) => {
   harga.classList.add("text-secondary");
   harga.textContent = "Harga : " + produk.harga;
   cardBody.appendChild(harga);
-  
-  // tombol deskripsi 
+
+  // tombol deskripsi
   const deskripsiBtn = document.createElement("a");
   deskripsiBtn.classList.add("text-center", "btn", "btn-light");
   deskripsiBtn.href = produk.deskripsiURL;
   deskripsiBtn.textContent = "Lihat Deskripsi";
   cardBody.appendChild(deskripsiBtn);
-  
+
   // tombol beli
   const beliBtn = document.createElement("a");
   beliBtn.classList.add("text-center", "btn", "btn-dark");
@@ -61,4 +60,3 @@ produkData.forEach((produk) => {
   cardCol.appendChild(card);
   cardContainer.appendChild(cardCol);
 });
-                                       
