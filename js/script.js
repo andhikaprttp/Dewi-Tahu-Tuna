@@ -4,7 +4,6 @@
 
 // Mengisi data produk ke dalam card
 const cardContainer = document.getElementById("cardContainer");
-
 produkData.forEach((produk) => {
   // Membuat elemen card
   const cardCol = document.createElement("div");
