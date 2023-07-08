@@ -37,6 +37,7 @@ produkData.forEach((produk) => {
   deskripsi.textContent = produk.deskripsi;
   cardBody.appendChild(deskripsi);
 
+  // harga produk
   const harga = document.createElement("p");
   harga.classList.add("text-secondary");
   harga.textContent = "Harga : " + produk.harga;
