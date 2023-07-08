@@ -42,7 +42,8 @@ produkData.forEach((produk) => {
   harga.classList.add("text-secondary");
   harga.textContent = "Harga : " + produk.harga;
   cardBody.appendChild(harga);
-
+  
+  // tombol deskripsi 
   const deskripsiBtn = document.createElement("a");
   deskripsiBtn.classList.add("text-center", "btn", "btn-light");
   deskripsiBtn.href = produk.deskripsiURL;
