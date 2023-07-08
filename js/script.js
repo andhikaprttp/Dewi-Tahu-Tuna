@@ -31,6 +31,7 @@ produkData.forEach((produk) => {
   nama.textContent = produk.nama;
   cardBody.appendChild(nama);
 
+// deskripsi produk
   const deskripsi = document.createElement("p");
   deskripsi.classList.add("card-text");
   deskripsi.textContent = produk.deskripsi;
