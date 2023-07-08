@@ -49,7 +49,8 @@ produkData.forEach((produk) => {
   deskripsiBtn.href = produk.deskripsiURL;
   deskripsiBtn.textContent = "Lihat Deskripsi";
   cardBody.appendChild(deskripsiBtn);
-
+  
+  // tombol beli
   const beliBtn = document.createElement("a");
   beliBtn.classList.add("text-center", "btn", "btn-dark");
   beliBtn.href = produk.beliURL;
